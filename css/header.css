@@ -1,0 +1,251 @@
+@font-face {
+    font-family: cocogoose;
+    src: url(cocogoose/Cocogoose-Pro-Regular-trial.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cocogoose;
+}
+
+header {
+    background-color: #006ab7;
+    position: sticky;
+    top: 0px;
+    height: 8vh;
+}
+
+.header-content {
+    height: 100%;
+    color: #fff;
+    justify-content: space-between;
+    padding: 0 4% 0 4%;
+}
+
+.header-logo {
+    position: relative;
+}
+
+.logoWise {
+    width: 12vw;
+}
+
+.nav-item,
+.nav-item-mobile {
+    text-decoration: none;
+}
+
+.nav-item {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 4vw;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #fff;
+}
+
+header::after {
+    content: "";
+    width: 100%;
+    background-color: #004475;
+    height: 8px;
+    position: absolute;
+    top: 8vh;
+}
+
+.hamburguer {
+    width: 10vw;
+    height: 5vh;
+}
+
+.header-links-container-mobile {
+    display: none;
+}
+
+button {
+    border: none;
+    background-color: #006ab7;
+}
+
+.side-menu {
+    display: none;
+    background-color: #006ab7;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+    animation: side-bar-open-animation 0.8s;
+    filter: none;
+}
+
+.side-menu-content {
+    top: 0;
+    background-color: #fff;
+}
+
+.logo-side {
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}
+
+.logo-side-img {
+    height: 3vh;
+}
+
+.side-menu-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.nav-item-mobile {
+    color: #545454;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}
+
+.nav-item-mobile::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #E4E4E4;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: -2vw;
+}
+
+/* .nav-item-mobile::before{ content: ""; width: 100%; height: 3px; background-color: #E4E4E4; position: absolute; display: flex; align-items: center; } */
+@keyframes side-bar-open-animation {
+    from {
+        right: -20rem;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+#wiseLeap-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.wiseLeapLogo {
+    width: 20%;
+}
+
+.wise-Leap-access-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wise-Leap-access-links {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 4vw;
+    width: auto;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: cocogoose;
+    color: #fff;
+    src: url(cocogoose/Cocogoose-Pro-Regular-trial.ttf);
+}
+
+.footer-content p {
+    font-size: 1.5vw;
+}
+
+.footer-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/footer-cropped.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5vw;
+    padding-bottom: 8vw;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links img {
+    height: 3vw;
+    width: auto;
+    padding: 0.3vw;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .nav-item {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .nav-item {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-item {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .header-links-container-pc {
+        display: none;
+    }
+
+    .header-links-container-mobile {
+        display: block;
+    }
+
+    .logoWise {
+        min-width: 20vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .logoWise {
+        min-width: 25vw;
+    }
+
+    #close {
+        margin-left: -25vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .logoWise {
+        min-width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #close {
+        margin-left: -35vw;
+    }
+}

@@ -1,0 +1,222 @@
+@font-face{
+    font-family: cocogoose;
+    src: url(cocogoose/Cocogoose-Pro-Regular-trial.ttf);
+}
+
+@font-face{
+    font-family: lemonmilk;
+    src: url(lemon_milk/LEMONMILK-Bold.otf);
+}
+
+body{
+    margin: 0px;
+    font-family: cocogoose;
+}
+
+
+.header{
+    background-color: #006ab7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header_content{
+    display: flex;
+}
+
+.header_content p{
+    margin-right: 25px;
+}
+
+
+.footer{
+    background-image: url(../img/footerBackground.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10vw;
+    padding-bottom: 8vw;
+    color: white;
+}
+
+.footer p{
+    font-size: 1.5vw;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_links img{
+    height: 3vw;
+    width: auto;
+    padding: 0.3vw;
+}
+
+
+/* Index */
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center h1{
+    color: #e0b035;
+    margin-top: 5vw;
+    font-size: 3vw;
+}
+
+.center_links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.center_links img{
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 4vw;
+    width: auto;
+}
+
+/* Ilustrações */
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    color: #0094ff;
+    flex-wrap: wrap
+}
+
+.title p{
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+
+.capa_cinza{
+    color: #006ab7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 5vw;
+}
+
+.personagens{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p{
+    font-size: 2vw;
+}
+
+.card img{
+    height: 20vw;
+    width: auto;
+    padding: 5vw;
+    padding-bottom: 0.5vw;
+}
+
+.capa_azul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #006ab7;
+    padding: 5vw;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.capa_azul::after{
+    content: "";
+    width: 100%;
+    background-color: #004e86;
+    height: 8px;
+    position: absolute;
+    bottom: -8px;
+}
+
+/* Marketing */
+
+.title_text{
+    display: flex;
+    justify-content: center;
+    color: #006ab7;
+}
+
+.title_text p{
+    font-size: 25px;
+}
+
+.highlight{
+    color: #0094ff;
+}
+
+.line{
+    height: 2px;
+    background-color: #006ab7;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 5px;
+}
+
+/* Identidade visual */
+
+.bright_highlight{
+    color: #85ccff;
+}
+
+.card_color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card_color p{
+    font-family: lemonmilk;
+}
+
+.color_list{
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    justify-content: center;
+}
+
+.color{
+    height: 75px;
+    width: 100px;
+    margin: 25px;
+    border-radius: 10px;
+}
