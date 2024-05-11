@@ -181,7 +181,7 @@ body{
 
 .text-after::after{
     content: "";
-    width: 100%;
+    width: 150%;
     background-color: #006ab7;
     border-radius: 5px;
     height: 2px;

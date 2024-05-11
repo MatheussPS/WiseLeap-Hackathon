@@ -76,7 +76,7 @@ button {
     z-index: 1;
     top: 0;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 20rem;
     animation: side-bar-open-animation 0.8s;
     filter: none;
@@ -105,11 +105,11 @@ button {
 
 .nav-item-mobile {
     color: #545454;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
     margin-left: 2vw;
 }
 
-.nav-item-mobile::after {
+.nav-item-mobile::after, .nav-item-mobile::before {
     content: "";
     width: 100%;
     height: 3px;
@@ -120,14 +120,21 @@ button {
     margin-left: -2vw;
 }
 
-/* .nav-item-mobile::before{ content: ""; width: 100%; height: 3px; background-color: #E4E4E4; position: absolute; display: flex; align-items: center; } */
+.nav-item-mobile::before {
+    margin-top: -2vh;
+}
+
+.nav-item-mobile::after{
+    margin-top: 2vh;
+}
+
 @keyframes side-bar-open-animation {
     from {
-        right: -20rem;
+        left: -20rem;
     }
 
     to {
-        right: 0;
+        left: 0;
     }
 }
 
