@@ -178,12 +178,13 @@ body{
     color: #0094ff;
 }
 
-.line{
-    height: 2px;
+
+.text-after::after{
+    content: "";
+    width: 100%;
     background-color: #006ab7;
-    margin-left: 100px;
-    margin-right: 100px;
     border-radius: 5px;
+    height: 2px;
 }
 
 /* Identidade visual */
