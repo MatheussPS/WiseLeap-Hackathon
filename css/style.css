@@ -324,6 +324,14 @@ button {
     border-radius: 10px;
 }
 
+/* GRAY BACKGROUND */
+
+.gray-bkg{
+    background-color: #f5f5f5;
+    border-bottom: 10px solid #E4E4E4;
+    width: 100vw;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .nav-item {
         font-size: 20px;
@@ -472,11 +480,6 @@ button {
     .capa_cinza{
         height: 25vh;
     }
-
-    .title p{
-        font-size: 1.7em;
-        text-align: center;
-    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -485,7 +488,7 @@ button {
     }
 
     .capa_azul img {
-        height: 10vh;
+        width: 40vw;
     }
 
     .title {
