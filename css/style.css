@@ -37,36 +37,6 @@ body{
     margin-right: 25px;
 }
 
-
-.footer{
-    background-image: url(../img/footerBackground.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10vw;
-    padding-bottom: 8vw;
-    color: white;
-}
-
-.footer p{
-    font-size: 1.5vw;
-}
-
-.footer_links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer_links img{
-    height: 3vw;
-    width: auto;
-    padding: 0.3vw;
-}
-
-
 /* Index */
 
 .center{
