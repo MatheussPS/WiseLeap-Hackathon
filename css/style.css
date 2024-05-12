@@ -248,6 +248,10 @@ button {
 
 }
 
+.capa_azul p{
+    text-align: center;
+}
+
 .capa_azul img {
     width: auto;
     height: 30vh;
@@ -360,7 +364,7 @@ button {
     }
 
     .title p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .title_text {
@@ -370,7 +374,9 @@ button {
     }
 
     .capa_azul {
-        height: 30vh;
+        /* height: 30vh; */
+        padding-top:5vw; 
+        padding-bottom:5vw; 
     }
 
     .capa_azul img {
@@ -485,6 +491,11 @@ button {
         height: 25vh;
     }
 
+    .capa_azul img{
+        width: 20vw;
+        height: auto;
+    }
+
     .capa_cinza{
         height: 25vh;
     }
@@ -533,6 +544,10 @@ button {
 @media only screen and (max-width: 390px) {
     .side-menu {
         width: 15rem;
+    }
+
+    .capa_azul{
+        padding: 0 25vw;
     }
 }
 
