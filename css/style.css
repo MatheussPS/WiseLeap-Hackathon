@@ -8,6 +8,9 @@
     src: url(lemon_milk/LEMONMILK-Bold.otf);
 }
 
+body{
+    overflow-x: hidden;
+}
 
 * {
     margin: 0;
@@ -22,6 +25,7 @@ header {
     top: 0px;
     height: 8vh;
     z-index: 999;
+    width: 100vw;
 }
 
 .header-content {
@@ -185,8 +189,8 @@ button {
     justify-content: center;
     margin-top: 15vh;
     margin-bottom: 5vw;
-    margin-right: 20vw;
-    margin-left: 20vw;
+    /* margin-right: 20vw; */
+    /* margin-left: 20vw; */
     color: #0094ff;
     flex-wrap: wrap
 }
@@ -235,7 +239,7 @@ button {
     background-color: #006ab7;
     justify-content: center;
     padding: 5vw;
-    width: 100%;
+    width: 100vw;
     height: 40vh;
     position: relative;
 
@@ -274,7 +278,8 @@ button {
 }
 
 .title_text p {
-    font-size: 1.8vw;
+    font-size: 1.8em;
+    width: 85%;
 }
 
 .highlight {
@@ -282,16 +287,17 @@ button {
 }
 
 .text-after {
-    width: 50%;
+    width: 100%;
 }
 
 .text-after::after {
     content: "";
-    min-width: 180%;
+    /* min-width: 180%; */
     background-color: #006ab7;
     border-radius: 5px;
     height: 2px;
-    margin-top: 5em;
+    margin-top: 10em;
+    width: 80%;
 }
 
 .title-WiseLeap {
@@ -363,7 +369,7 @@ button {
     }
 
     .title_text p {
-        font-size: 3vw;
+        font-size: 1.5em;
     }
 
     .text-after::after {
@@ -405,7 +411,7 @@ button {
     }
 
     .title p {
-        font-size: 6vw;
+        font-size: 2.6em;
     }
 
     .title_text {
@@ -422,7 +428,7 @@ button {
     }
 
     .title_text p {
-        font-size: 4vw;
+        font-size: 1.5em;
     }
 }
 
@@ -439,15 +445,18 @@ button {
     .bunner-slogan p {
         font-size: 7vw;
     }
-
+    .title p {
+        font-size: 2em;
+    }
     .title_text p {
-        font-size: 5vw;
+        font-size: 1.5em;
         text-align: center;
     }
 
-    .title p {
-        font-size: 6vw;
+    #break-line{
+        width: 90%;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -474,6 +483,14 @@ button {
     .title_text p {
         font-size: 5vw;
         text-align: center;
+    }
+
+    .text-after::after{
+        margin-top: 5em;
+    }
+
+    #break-line{
+        width: 100%;
     }
 }
 
