@@ -186,6 +186,8 @@ button {
 
 .title {
     display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
     margin-top: 15vh;
     margin-bottom: 5vw;
@@ -218,6 +220,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .card-character p {
@@ -231,6 +234,7 @@ button {
     padding-bottom: 0.5vw;
 }
 
+
 .capa_azul {
     color: white;
     display: flex;
@@ -240,7 +244,6 @@ button {
     justify-content: center;
     padding: 5vw;
     width: 100vw;
-    height: 40vh;
     position: relative;
 
 }
@@ -275,6 +278,7 @@ button {
     color: #006ab7;
     width: 100%;
     margin-top: 12vh;
+    text-align: center;
 }
 
 .title_text p {
@@ -339,6 +343,11 @@ button {
     border-radius: 10px;
 }
 
+.title_container{
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .nav-item {
         font-size: 20px;
@@ -351,7 +360,7 @@ button {
     }
 
     .title p {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .title_text {
@@ -411,12 +420,14 @@ button {
     }
 
     .title p {
-        font-size: 2.6em;
+        font-size: 2.0em;
     }
 
     .title_text {
         margin-top: 5vh;
         width: 95%;
+        margin-right: 0;
+
     }
 
     .capa_azul {
@@ -429,6 +440,12 @@ button {
 
     .title_text p {
         font-size: 1.5em;
+        text-align: center;
+    }
+
+    .card-character img{
+        width: 75%;
+        height: auto;
     }
 }
 
@@ -457,6 +474,25 @@ button {
         width: 90%;
     }
 
+    .card-character p{
+        font-size: 3vw;
+    }
+
+}
+
+@media only screen and (max-width: 570px){
+    .capa_azul{
+        height: 25vh;
+    }
+
+    .capa_cinza{
+        height: 25vh;
+    }
+
+    .title p{
+        font-size: 1.7em;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -477,7 +513,7 @@ button {
     }
 
     .title p {
-        font-size: 9vw;
+        font-size: 7vw;
     }
 
     .title_text p {
