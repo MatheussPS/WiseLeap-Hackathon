@@ -367,7 +367,7 @@ button {
     }
 
     .text-after::after {
-        width: 60%;
+        min-width: 90%;
     }
 }
 
