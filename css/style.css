@@ -40,7 +40,7 @@ header {
 }
 
 .logoWise {
-    width: 12vw;
+    width: 10em;
 }
 
 .nav-item,
@@ -68,8 +68,7 @@ header::after {
 }
 
 .hamburguer {
-    width: 10vw;
-    height: 5vh;
+    height: 1.5em;
 }
 
 .header-links-container-mobile {
@@ -393,7 +392,7 @@ button {
     }
 
     .logoWise {
-        min-width: 20vw;
+        min-width: 8em;
     }
 
     #bunner {
@@ -433,10 +432,6 @@ button {
 }
 
 @media only screen and (max-width: 650px) {
-    .logoWise {
-        min-width: 25vw;
-    }
-
     #close {
         margin-left: -25vw;
     }
@@ -460,10 +455,6 @@ button {
 }
 
 @media only screen and (max-width: 450px) {
-    .logoWise {
-        min-width: 45vw;
-    }
-
     .capa_azul {
         height: 20vh;
     }
