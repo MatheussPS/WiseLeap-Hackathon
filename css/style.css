@@ -375,11 +375,21 @@ button {
     .text-after::after {
         min-width: 90%;
     }
+
+    .color_list{
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
     .nav-item {
         font-size: 15px;
+    }
+
+    .color_list{
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
 
@@ -443,6 +453,11 @@ button {
         width: 70% !important;
     }
 
+    .color_list{
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -468,6 +483,11 @@ button {
 
     .card-character p{
         font-size: 3vw;
+    }
+
+    .color_list{
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
     }
 
 }
@@ -527,6 +547,11 @@ button {
         height: auto;
         width: 20vw;
     }
+
+    .color_list{
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -546,11 +571,21 @@ button {
         height: auto;
         width: 30vw;
     }
+
+    .color_list{
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     #close {
         margin-left: -35vw;
+    }
+
+    .color_list{
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
     }
 }
 
