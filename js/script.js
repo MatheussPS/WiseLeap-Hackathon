@@ -2,7 +2,7 @@ const openSideMenu = () => {
     const barraLateral = document.querySelector('.side-menu')
     const actualDisplay = barraLateral.style.display
     const hamburguer = document.querySelector(".hamburguer")
-    const body = document.querySelector("html")
+    const body = document.querySelector("body")
 
 
     if(actualDisplay == 'block'){
@@ -18,5 +18,4 @@ const openSideMenu = () => {
 
 
 }
-
 
