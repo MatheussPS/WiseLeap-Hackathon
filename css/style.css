@@ -157,37 +157,6 @@ button {
     }
 }
 
-/* Index */
-
-#bunner {
-    margin-top: 5px;
-    height: 140vh;
-    width: 100%;
-}
-
-.bunner-container {
-    background-image: url('../img/bunner-img.jpg');
-    width: 100%;
-    height: 100%;
-    /* top:5vh; */
-    background-position: right;
-    background-size: cover;
-    color: #fff;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-
-}
-
-.bunner-slogan {
-    width: 60%;
-    margin-left: 15vh;
-}
-
-.bunner-slogan p {
-    font-size: 4vw;
-}
-
 /* Ilustrações */
 
 .title {
