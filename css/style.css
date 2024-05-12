@@ -188,6 +188,7 @@ button {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
     margin-top: 10em !important;
     margin-bottom: 10em;
     /* margin-right: 20vw; */
