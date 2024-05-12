@@ -45,35 +45,97 @@
         </div>
     </header>
     <section>
+
+        <!-- bunner -->
         <div class="bunner-container">
             <div class="bunner-slogan">
                 <p class="slogan"> Conhecimento à todos:<br>Aprender nunca foi tão simples</p>
             </div>
         </div>
-        <div class="line-detail-container">
-            <img src="img/line1.png" alt="">
-        </div>
-        <div class="objetivo-container">
-            <div class="topic-title-container">
+        <!-- objetivo topic -->
+        <div class="objetivo-container d-flex justify-content-center align-items-center flex-column">
+            <div class="topic-title-container d-flex justify-content-center align-items-center mb-5">
                 <p>Objetivo</p>
                 <img src="img/objetivo_icon.png" alt="">
             </div>
             <div class="topic-desc-container">
-                <p>Fornecer educação de qualidade de forma prática</p>
+                <p id="objetivo-text">Fornecer educação de qualidade de forma prática</p>
             </div>
         </div>
-        <div class="acessivel-contaienr gray-bkg">
-            <div class="img-topic-container">
+
+        <!-- acessivel topic -->
+        <div class="acessivel-container gray-bkg topic-container">
+            <div class="img-topic-container-pc"> 
+                <!-- disable in mobile -->
                 <img src="img/acessivel_img.png" alt="">
             </div>
             <div class="info-topic-container">
+
                 <div class="topic-title-container">
                     <p>Acessível</p>
                     <img src="img/acessivel_icon.png" alt="">
                 </div>
+
                 <div class="topic-desc-container">
                     <p>Englobar estudantes que abandonaram o Ensino Medio ou Fundamental.</p>
                 </div>
+
+                <!-- enable in mobile -->
+                <div class="img-topic-container-mobile d-none">
+                    <img src="img/acessivel_img.png" alt="">
+                </div>
+
+                <div class="add-info-about-topic with-right-line">
+                    <p>Em novembro de 2020, 1,5 milhão de crianças e adolescentes entre 6 e 17 anos não frequentavam a escola.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- gratuito topic -->
+        <div class="gratuito-container topic-container">
+            <div class="img-topic-container-pc"> 
+                <!-- disable in mobile -->
+                <img src="img/gratuito_img.png" alt="">
+            </div>
+            <div class="info-topic-container">
+
+                <div class="topic-title-container">
+                    <p>Gratuito</p>
+                    <img src="img/gratuito_icon.png" alt="">
+                </div>
+
+                <div class="topic-desc-container">
+                    <p>Levar a educação de forma totalmente gratuita, para assim alcançar melhor nosso público alvo.</p>
+                </div>
+
+                <!-- enable in mobile -->
+                <div class="img-topic-container-mobile d-none">
+                    <img src="img/gratuito_img.png" alt="">
+                </div>
+
+                <div class="add-info-about-topic with-left-line">
+                    <p>Em 2019, 90% das crianças e adolescentes de 4 a 17 anos que estavam fora da escola tinham renda familiar per capita menor que um salário mínimo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- mercado topic -->
+        <div class="mercado-container gray-bkg topic-container">
+            <div class="img-topic-container-pc"> 
+                <img src="img/mercado_img.png" alt="">
+            </div>
+            <div class="info-topic-container">
+
+                <div class="topic-title-container">
+                    <p>Mercado de<br>Trabalho</p>
+                    <img src="img/mercado_icon.png" alt="">
+                </div>
+
+                <div class="topic-desc-container">
+                    <p>Melhor ingressão no mercado de trabalho para os usuários após adquirirem o conhecimento fornecido.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -96,5 +158,4 @@
     </footer>
 
 </body>
-
 </html>
