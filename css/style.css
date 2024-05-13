@@ -206,11 +206,20 @@ button {
     padding: 5vh;
 }
 
+.mobile {
+    display: none;
+}
+
 .topic-title-container {
     width: 100%;
     flex-direction: row;
     justify-content: right;
     text-align: right;
+}
+
+.topic-title-container-mobile {
+    margin-top: 10vh;
+    margin-bottom: 7vh;
 }
 
 .topic-title-container img {
@@ -220,6 +229,19 @@ button {
     height: 39px;
 }
 
+.merc-trab img {
+    margin-bottom: 2vh;
+}
+
+.title-merc {
+    margin-right: -58%;
+}
+
+
+.merc-de {
+    margin-top: -7vh;
+}
+
 .topics-content {
     display: flex;
     margin-top: 20vh;
@@ -227,23 +249,32 @@ button {
     padding: -2vw;
 }
 
-.topic-description-right{
+.topic-description img {
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+
+.topic-description-left{
+    margin-left: -68%;
+}
+
+.topic-description-right {
     margin-left: 39.5vw;
 }
 
-.topic-description-right-network p{
+.topic-description-right-network p {
     margin-right: -30%;
     justify-content: right;
     display: flex;
     text-align: right;
 }
 
-.guigas{
+.guigas {
     margin-left: 15vh;
 }
 
-.merc img{
-    margin-bottom: 12vh;
+.merc img {
+    margin-bottom: 2vh;
     margin-right: 1vw;
     width: 49px;
     height: auto;
@@ -255,18 +286,35 @@ button {
     /* margin-left: vw; */
 }
 
+.img-cartoon-gratuito img{
+    margin-right: 3em;
+    width: 18vw;
+}
+
 .info-topic-container {
     width: 100%;
     text-align: right;
     justify-content: right;
 }
 
-.topic-desc-container {
-    color: #000;
+.topic-desc-container{
     text-align: right;
 }
+.topic-desc-content-left{
+    text-align: left;
+    width: 70%;
+}
 
-.topic-desc-content{
+.topic-desc-container, .topic-desc-content-left {
+    color: #000;
+    
+}
+
+.topic-desc-container-mobile {
+    width: 80%;
+}
+
+.topic-desc-content {
     width: 70%;
     margin-left: 29.5%;
 }
@@ -275,10 +323,12 @@ button {
     text-align: right;
 }
 
-.add-info-about-topic p {
+.add-info-about-topic p,
+.add-info-about-topic-mobile p {
     font-family: kanit;
-    color: #003362;
+    color: #003362; 
     /* width: 50vw; */
+
 
 }
 
@@ -288,6 +338,34 @@ button {
     width: 60%;
     margin-left: 36%;
     margin-top: 15vh;
+}
+
+.cartoon-img {
+    margin: 5vh;
+}
+
+.cartoon-img img {
+    width: 300px;
+}
+
+.with-left-line, .with-left-line-pc {
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    margin-left: 0;
+    border-left: 2px solid #006AB7;
+    padding-left: 2vw;
+}
+
+.with-left-line-pc::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 15%;
+    margin-top: -15vh;
+    margin-left: -75vw;
+    background-color: #006AB7;
 }
 
 .with-right-line::after {
@@ -302,61 +380,62 @@ button {
     margin-left: 2vw;
 }
 
-#equipe{
+#equipe {
+    margin-top: 35vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.title-text{
+.title-text {
     font-size: 4em;
     color: #0094FF;
 }
 
-.equipe-links{
+.equipe-links {
     margin-top: -8em;
     font-size: 2em;
 }
 
 
-.githubLogo-img{
+.githubLogo-img {
     width: 1em;
     margin-left: 1vw;
     margin-bottom: 2vh;
 }
 
-.equipe-links a{
+.equipe-links a {
     color: #000;
     margin-top: 1vh;
 }
 
-.icons-links{
+.icons-links {
     margin-top: 10vh;
 }
 
-.icons-links p{
-  color: #E0B035;
+.icons-links p {
+    color: #E0B035;
 }
 
-.acces-now{
+.acces-now {
     font-size: 1em;
 }
 
-.icons-links img{
-   width: 2vw;
+.icons-links img {
+    width: 2vw;
 }
 
-.img-links{
+.img-links {
     display: flex;
-    width: 10%;
+    /* width: 10%; */
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 2vw;
 }
 
-.img-links a img{
+.img-links a img {
     width: 1em;
     margin-right: 2vw;
 }
@@ -376,9 +455,6 @@ button {
     align-items: center;
     margin-top: 10em !important;
     margin-bottom: 10em;
-    /* margin-right: 20vw; */
-    /* margin-left: 20vw; */
-
     flex-wrap: wrap
 }
 
@@ -480,6 +556,10 @@ button {
     color: #006ab7;
 }
 
+.blue-royal p{
+    color: #0094FF;
+}
+
 .title_text p,
 .topic-desc-container p {
     font-size: 1.8em;
@@ -578,17 +658,21 @@ button {
         margin-bottom: 2vh;
     }
 
-    .img-cartoon{
+    .img-cartoon {
         margin-right: 65vw;
         position: absolute;
     }
 
-    .guigas{
+    .guigas {
         position: relative;
         margin-left: -5vw;
     }
 
-    .topic-description-right{
+    .topic-description-left{
+        margin-left: -55%;
+    }
+
+    .topic-description-right {
         margin-right: -19%;
     }
 
@@ -673,6 +757,18 @@ button {
         margin-top: 25vh;
     }
 
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    .gratuito-cart{
+        max-width: 50vw;
+    }
+
     .topic-title-container {
         flex-direction: column;
     }
@@ -682,8 +778,8 @@ button {
     }
 
     .title p,
-    .topic-title-container p, .title-text {
-        font-size: 2.0em;
+    .topic-title-container p {
+        font-size: 2.5em;
     }
 
     .title_text {
@@ -693,7 +789,7 @@ button {
 
     }
 
-    .equipe-links{
+    .equipe-links {
         font-size: 5vw;
     }
 
@@ -738,7 +834,8 @@ button {
     }
 
     .title p,
-    .topic-title-container p, .title-text {
+    .topic-title-container p,
+    .title-text {
         font-size: 2em;
     }
 
@@ -761,9 +858,11 @@ button {
         margin-right: 3.5vw;
     }
 
-    .acces-now{
-        font-size: 0.5em;
+    .acces-now {
+        font-size: 1em;
     }
+
+    
 
 }
 
@@ -781,9 +880,10 @@ button {
         height: 25vh;
     }
 
-    .acces-now{
-        font-size: 1.5em;
+    .acces-now {
+        font-size: 1em;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -800,8 +900,9 @@ button {
     }
 
     .title p,
-    .topic-title-container p, .title-text {
-        font-size: 7vw;
+    .topic-title-container p,
+    .title-text {
+        font-size: 2.5em;
     }
 
     .title_text p,
@@ -833,6 +934,7 @@ button {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
+
 }
 
 @media only screen and (max-width: 390px) {
@@ -857,6 +959,7 @@ button {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -868,7 +971,9 @@ button {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
+
 }
+
 
 /* FOOTER */
 
