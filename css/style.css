@@ -698,7 +698,8 @@ button {
     }
 
     .capa_azul {
-        height: 30vh;
+        /* height: 30vh; */
+        height: auto;
     }
 
     .capa_azul img {
@@ -769,7 +770,8 @@ button {
 
 @media only screen and (max-width: 570px) {
     .capa_azul {
-        height: 25vh;
+        /* height: 25vh; */
+        height: auto;
     }
 
     .capa_azul img {
@@ -778,7 +780,7 @@ button {
     }
 
     .capa_cinza {
-        height: 25vh;
+        height: auto;
     }
 
     .acces-now{
@@ -788,11 +790,12 @@ button {
 
 @media only screen and (max-width: 450px) {
     .capa_azul {
-        padding: 20vh 0;
+        padding: 7.5vh 0;
+        height: auto;
     }
 
     .capa_azul img {
-        width: 40vw;
+        width: 30vw;
     }
 
     .title {
@@ -846,6 +849,7 @@ button {
 
     .capa_azul {
         padding: 20vh 0vw;
+        height: auto;
     }
 
     .img_card img {
@@ -867,6 +871,14 @@ button {
     .color_list {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
+    }
+
+    .capa_cinza {
+        height: auto;
+    }
+
+    .capa_azul {
+        height: auto;
     }
 }
 
