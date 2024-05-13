@@ -846,7 +846,6 @@ button {
     /* .capa_azul{
         padding: 0 25vw;
     } */
-
     .capa_azul {
         padding: 20vh 0vw;
         height: auto;
@@ -882,6 +881,12 @@ button {
         height: auto;
         padding: 10vw 0;
     }
+
+    .title p{
+        /* font-size: 20px; */
+        font-size: 5vw;
+    }
+
 }
 
 /* FOOTER */
