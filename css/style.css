@@ -302,6 +302,65 @@ button {
     margin-left: 2vw;
 }
 
+#equipe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-text{
+    font-size: 4em;
+    color: #0094FF;
+}
+
+.equipe-links{
+    margin-top: -8em;
+    font-size: 2em;
+}
+
+
+.githubLogo-img{
+    width: 1em;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+}
+
+.equipe-links a{
+    color: #000;
+    margin-top: 1vh;
+}
+
+.icons-links{
+    margin-top: 10vh;
+}
+
+.icons-links p{
+  color: #E0B035;
+}
+
+.acces-now{
+    font-size: 1em;
+}
+
+.icons-links img{
+   width: 2vw;
+}
+
+.img-links{
+    display: flex;
+    width: 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.img-links a img{
+    width: 1em;
+    margin-right: 2vw;
+}
+
 /* Ilustrações */
 
 .title,
@@ -623,7 +682,7 @@ button {
     }
 
     .title p,
-    .topic-title-container p {
+    .topic-title-container p, .title-text {
         font-size: 2.0em;
     }
 
@@ -632,6 +691,10 @@ button {
         width: 95%;
         margin-right: 0;
 
+    }
+
+    .equipe-links{
+        font-size: 5vw;
     }
 
     .capa_azul {
@@ -675,7 +738,7 @@ button {
     }
 
     .title p,
-    .topic-title-container p {
+    .topic-title-container p, .title-text {
         font-size: 2em;
     }
 
@@ -698,6 +761,10 @@ button {
         margin-right: 3.5vw;
     }
 
+    .acces-now{
+        font-size: 0.5em;
+    }
+
 }
 
 @media only screen and (max-width: 570px) {
@@ -712,6 +779,10 @@ button {
 
     .capa_cinza {
         height: 25vh;
+    }
+
+    .acces-now{
+        font-size: 1.5em;
     }
 }
 
@@ -729,7 +800,7 @@ button {
     }
 
     .title p,
-    .topic-title-container p {
+    .topic-title-container p, .title-text {
         font-size: 7vw;
     }
 
