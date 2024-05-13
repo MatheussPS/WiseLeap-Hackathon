@@ -8,7 +8,12 @@
     src: url(lemon_milk/LEMONMILK-Bold.otf);
 }
 
-body{
+@font-face {
+    font-family: kanit;
+    src: url(kanit/Kanit-Light.ttf);
+}
+
+body {
     overflow-x: hidden;
 }
 
@@ -140,12 +145,12 @@ button {
     margin-top: 2vh;
 }
 
-.bkg-side-menu{
-    background-color : rgba(0,0,0,0.7);
+.bkg-side-menu {
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;
     display: none;
-  }
+}
 
 @keyframes side-bar-open-animation {
     from {
@@ -157,7 +162,152 @@ button {
     }
 }
 
+/* index */
+
+#bunner {
+    margin-top: 5px;
+    height: 140vh;
+    width: 100%;
+}
+
+.bunner-container {
+    background-image: url('../img/bunner-img.jpg');
+    width: 100%;
+    height: 100%;
+    /* top:5vh; */
+    background-position: right;
+    background-size: cover;
+    color: #fff;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.bunner-slogan {
+    width: 60%;
+    margin-left: 15vh;
+}
+
+.bunner-slogan p {
+    font-size: 4vw;
+}
+
+#skills-wise {
+    width: 100%;
+    margin-top: 35vh;
+}
+
+.objetivo-container {
+    margin-bottom: 35vh;
+}
+
+.skills-content {
+    width: 100%;
+    padding: 5vh;
+}
+
+.topic-title-container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: right;
+    text-align: right;
+}
+
+.topic-title-container img {
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+    width: 39px;
+    height: 39px;
+}
+
+.topics-content {
+    display: flex;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    padding: -2vw;
+}
+
+.topic-description-right{
+    margin-left: 39.5vw;
+}
+
+.topic-description-right-network p{
+    margin-right: -30%;
+    justify-content: right;
+    display: flex;
+    text-align: right;
+}
+
+.guigas{
+    margin-left: 15vh;
+}
+
+.merc img{
+    margin-bottom: 12vh;
+    margin-right: 1vw;
+    width: 49px;
+    height: auto;
+    /* position: absolute; */
+}
+
+.img-cartoon img {
+    width: 31.40625vw;
+    /* margin-left: vw; */
+}
+
+.info-topic-container {
+    width: 100%;
+    text-align: right;
+    justify-content: right;
+}
+
+.topic-desc-container {
+    color: #000;
+    text-align: right;
+}
+
+.topic-desc-content{
+    width: 70%;
+    margin-left: 29.5%;
+}
+
+.skills-content-description {
+    text-align: right;
+}
+
+.add-info-about-topic p {
+    font-family: kanit;
+    color: #003362;
+    /* width: 50vw; */
+
+}
+
+.add-info-about-topic {
+    font-size: 15px;
+    margin-right: 2vw;
+    width: 60%;
+    margin-left: 36%;
+    margin-top: 15vh;
+}
+
+.with-right-line::after {
+    content: "";
+    background-color: #006AB7;
+    width: 2px;
+    height: auto;
+    position: absolute;
+    z-index: 999;
+    height: 15%;
+    margin-top: -15vh;
+    margin-left: 2vw;
+}
+
 /* Ilustrações */
+
+.title,
+.topic-title-container p {
+    color: #0094ff;
+}
 
 .title {
     display: flex;
@@ -169,11 +319,12 @@ button {
     margin-bottom: 10em;
     /* margin-right: 20vw; */
     /* margin-left: 20vw; */
-    color: #0094ff;
+
     flex-wrap: wrap
 }
 
-.title p {
+.title p,
+.topic-title-container p {
     font-size: 3vw;
     text-align: center;
 }
@@ -224,7 +375,7 @@ button {
 
 }
 
-.capa_azul p{
+.capa_azul p {
     text-align: center;
 }
 
@@ -255,15 +406,24 @@ button {
 .title_text {
     display: flex;
     justify-content: center;
-    color: #006ab7;
     width: 100%;
     margin-top: 12vh;
     text-align: center;
 }
 
 .title_text p {
-    font-size: 1.8em;
     width: 85%;
+
+}
+
+.title_text p,
+.blue p {
+    color: #006ab7;
+}
+
+.title_text p,
+.topic-desc-container p {
+    font-size: 1.8em;
 }
 
 .highlight {
@@ -323,15 +483,15 @@ button {
     border-radius: 10px;
 }
 
-.title_container{
+.title_container {
     display: flex;
     justify-content: center;
-    
+
 }
 
 /* GRAY BACKGROUND */
 
-.gray-bkg{
+.gray-bkg {
     background-color: #f5f5f5;
     border-bottom: 10px solid #E4E4E4;
     width: 100vw;
@@ -348,7 +508,8 @@ button {
         font-size: 17px;
     }
 
-    .title p {
+    .title p,
+    .topic-title-container p {
         font-size: 4vw;
     }
 
@@ -358,17 +519,32 @@ button {
         margin-bottom: 2vh;
     }
 
+    .img-cartoon{
+        margin-right: 65vw;
+        position: absolute;
+    }
+
+    .guigas{
+        position: relative;
+        margin-left: -5vw;
+    }
+
+    .topic-description-right{
+        margin-right: -19%;
+    }
+
     .capa_azul {
         /* height: 30vh; */
-        padding-top:5vw; 
-        padding-bottom:5vw; 
+        padding-top: 5vw;
+        padding-bottom: 5vw;
     }
 
     .capa_azul img {
         height: 20vh;
     }
 
-    .title_text p {
+    .title_text p,
+    .topic-desc-container p {
         font-size: 1.5em;
     }
 
@@ -376,7 +552,7 @@ button {
         min-width: 90%;
     }
 
-    .color_list{
+    .color_list {
         margin-left: 8vw;
         margin-right: 8vw;
     }
@@ -387,9 +563,23 @@ button {
         font-size: 15px;
     }
 
-    .color_list{
+    .color_list {
         margin-left: 10vw;
         margin-right: 10vw;
+    }
+
+    #bunner {
+        height: 80vh;
+    }
+
+    .bunner-container {
+        align-items: flex-start;
+    }
+
+    .bunner-slogan {
+        margin-left: 5vw;
+        margin-top: 10vh;
+        width: 30%;
     }
 }
 
@@ -420,7 +610,20 @@ button {
         width: 30%;
     }
 
-    .title p {
+    #skills-wise {
+        margin-top: 25vh;
+    }
+
+    .topic-title-container {
+        flex-direction: column;
+    }
+
+    .topic-title-container img {
+        margin: 0;
+    }
+
+    .title p,
+    .topic-title-container p {
         font-size: 2.0em;
     }
 
@@ -439,21 +642,22 @@ button {
         height: 15vh;
     }
 
-    .title_text p {
+    .title_text p,
+    .topic-desc-container p {
         font-size: 1.5em;
         text-align: center;
     }
 
-    .card-character img{
+    .card-character img {
         width: 75%;
         height: auto;
     }
 
-    .break-line{
+    .break-line {
         width: 70% !important;
     }
 
-    .color_list{
+    .color_list {
         margin-left: 8vw;
         margin-right: 8vw;
     }
@@ -469,40 +673,44 @@ button {
     .bunner-slogan p {
         font-size: 7vw;
     }
-    .title p {
+
+    .title p,
+    .topic-title-container p {
         font-size: 2em;
     }
-    .title_text p {
+
+    .title_text p,
+    .topic-desc-container p {
         font-size: 1.5em;
         text-align: center;
     }
 
-    .break-line{
+    .break-line {
         width: 80% !important;
     }
 
-    .card-character p{
+    .card-character p {
         font-size: 3vw;
     }
 
-    .color_list{
+    .color_list {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
 
 }
 
-@media only screen and (max-width: 570px){
-    .capa_azul{
+@media only screen and (max-width: 570px) {
+    .capa_azul {
         height: 25vh;
     }
 
-    .capa_azul img{
+    .capa_azul img {
         width: 20vw;
         height: auto;
     }
 
-    .capa_cinza{
+    .capa_cinza {
         height: 25vh;
     }
 }
@@ -520,20 +728,22 @@ button {
         margin-top: 10vh;
     }
 
-    .title p {
+    .title p,
+    .topic-title-container p {
         font-size: 7vw;
     }
 
-    .title_text p {
+    .title_text p,
+    .topic-desc-container p {
         font-size: 5vw;
         text-align: center;
     }
 
-    .text-after::after{
+    .text-after::after {
         margin-top: 5em;
     }
 
-    #break-line{
+    #break-line {
         width: 100%;
     }
 
@@ -543,12 +753,12 @@ button {
         justify-content: center;
     }
 
-    .img_card img{
+    .img_card img {
         height: auto;
         width: 20vw;
     }
 
-    .color_list{
+    .color_list {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
@@ -563,16 +773,16 @@ button {
         padding: 0 25vw;
     } */
 
-    .capa_azul{
-        padding:20vh 0vw;
+    .capa_azul {
+        padding: 20vh 0vw;
     }
 
-    .img_card img{
+    .img_card img {
         height: auto;
         width: 30vw;
     }
 
-    .color_list{
+    .color_list {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
@@ -583,7 +793,7 @@ button {
         margin-left: -35vw;
     }
 
-    .color_list{
+    .color_list {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
@@ -591,52 +801,59 @@ button {
 
 /* FOOTER */
 
-footer{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 389px;
-  position: relative;
-  background: url("../img/footerBkg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 389px;
+    position: relative;
+    background: url("../img/footerBkg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-footer .bkg-container{
-  
-  width: 100%;
-  height: 100%;
+footer .bkg-container {
+
+    width: 100%;
+    height: 100%;
 }
 
-.rede-sociais-img-container a img{
-  width: 40px;
-  margin: .6em;
+.rede-sociais-img-container a img {
+    width: 40px;
+    margin: .6em;
 }
 
-.rede-sociais-text-container p, .right-items-footer p{
-  font-size: 1.5em;
-  margin-top: 4em;
+.rede-sociais-text-container p,
+.right-items-footer p {
+    font-size: 1.5em;
+    margin-top: 4em;
 }
 
 @media (max-width: 1200px) {
-  .rede-sociais-text-container p, .right-items-footer p{
-    font-size: 1.2em;
-    margin-top: 6em !important;
-  }
+
+    .rede-sociais-text-container p,
+    .right-items-footer p {
+        font-size: 1.2em;
+        margin-top: 6em !important;
+    }
 }
 
 @media (max-width: 992px) {
-  .rede-sociais-text-container p, .right-items-footer p{
-    font-size: 1em;
-    margin-top: 0 !important;
-  }
-  .rede-sociais-text-container p {
-    margin-top: 6em !important;
-  }
-  .rede-sociais-img-container a img{
-    width: 30px;
-    margin: .6em;
-  }
+
+    .rede-sociais-text-container p,
+    .right-items-footer p {
+        font-size: 1em;
+        margin-top: 0 !important;
+    }
+
+    .rede-sociais-text-container p {
+        margin-top: 6em !important;
+    }
+
+    .rede-sociais-img-container a img {
+        width: 30px;
+        margin: .6em;
+    }
 }
