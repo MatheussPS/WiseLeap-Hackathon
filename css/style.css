@@ -875,10 +875,12 @@ button {
 
     .capa_cinza {
         height: auto;
+        padding: 10vw 0;
     }
 
     .capa_azul {
         height: auto;
+        padding: 10vw 0;
     }
 }
 
