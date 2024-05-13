@@ -570,6 +570,7 @@ button {
     .title p,
     .topic-title-container p {
         font-size: 4vw;
+        margin: 0 20px;
     }
 
     .title_text {
@@ -640,6 +641,10 @@ button {
         margin-top: 10vh;
         width: 30%;
     }
+
+    .title p{
+        margin: 0 20px;
+    }
 }
 
 @media only screen and (max-width: 990px) {
@@ -684,6 +689,7 @@ button {
     .title p,
     .topic-title-container p, .title-text {
         font-size: 2.0em;
+        margin: 0 20px;
     }
 
     .title_text {
@@ -697,9 +703,15 @@ button {
         font-size: 5vw;
     }
 
+    .capa_cinza{
+        height: auto;
+        padding: 20vw 0;
+    }
+
     .capa_azul {
         /* height: 30vh; */
         height: auto;
+        padding: 20vw 0;
     }
 
     .capa_azul img {
@@ -805,6 +817,7 @@ button {
     .title p,
     .topic-title-container p, .title-text {
         font-size: 7vw;
+        margin: 0 15px;
     }
 
     .title_text p,
@@ -843,11 +856,8 @@ button {
         width: 15rem;
     }
 
-    /* .capa_azul{
-        padding: 0 25vw;
-    } */
     .capa_azul {
-        padding: 20vh 0vw;
+        padding: 10vh 0vw;
         height: auto;
     }
 
@@ -859,6 +869,10 @@ button {
     .color_list {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
+    }
+
+    .title p{
+        margin: 0 12px;
     }
 }
 
@@ -885,6 +899,7 @@ button {
     .title p{
         /* font-size: 20px; */
         font-size: 5vw;
+        margin: 0 10px;
     }
 
 }
