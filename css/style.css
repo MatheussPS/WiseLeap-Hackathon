@@ -650,6 +650,7 @@ button {
     .title p,
     .topic-title-container p {
         font-size: 4vw;
+        margin: 0 20px;
     }
 
     .title_text {
@@ -724,6 +725,10 @@ button {
         margin-top: 10vh;
         width: 30%;
     }
+
+    .title p{
+        margin: 0 20px;
+    }
 }
 
 @media only screen and (max-width: 990px) {
@@ -778,8 +783,8 @@ button {
     }
 
     .title p,
-    .topic-title-container p {
-        font-size: 2.5em;
+    .topic-title-container p, .title-text {
+        font-size: 2.0em;
     }
 
     .title_text {
@@ -793,8 +798,15 @@ button {
         font-size: 5vw;
     }
 
+    .capa_cinza{
+        height: auto;
+        padding: 20vw 0;
+    }
+
     .capa_azul {
-        height: 30vh;
+        /* height: 30vh; */
+        height: auto;
+        padding: 20vw 0;
     }
 
     .capa_azul img {
@@ -868,7 +880,8 @@ button {
 
 @media only screen and (max-width: 570px) {
     .capa_azul {
-        height: 25vh;
+        /* height: 25vh; */
+        height: auto;
     }
 
     .capa_azul img {
@@ -877,7 +890,7 @@ button {
     }
 
     .capa_cinza {
-        height: 25vh;
+        height: auto;
     }
 
     .acces-now {
@@ -888,11 +901,12 @@ button {
 
 @media only screen and (max-width: 450px) {
     .capa_azul {
-        padding: 20vh 0;
+        padding: 7.5vh 0;
+        height: auto;
     }
 
     .capa_azul img {
-        width: 40vw;
+        width: 30vw;
     }
 
     .title {
@@ -900,9 +914,8 @@ button {
     }
 
     .title p,
-    .topic-title-container p,
-    .title-text {
-        font-size: 2.5em;
+    .topic-title-container p, .title-text {
+        font-size: 7vw;
     }
 
     .title_text p,
@@ -942,12 +955,9 @@ button {
         width: 15rem;
     }
 
-    /* .capa_azul{
-        padding: 0 25vw;
-    } */
-
     .capa_azul {
-        padding: 20vh 0vw;
+        padding: 10vh 0vw;
+        height: auto;
     }
 
     .img_card img {
@@ -959,7 +969,6 @@ button {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
-
 }
 
 @media only screen and (max-width: 375px) {
@@ -971,7 +980,6 @@ button {
         margin-left: 3.5vw;
         margin-right: 3.5vw;
     }
-
 }
 
 
